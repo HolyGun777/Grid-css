@@ -32,6 +32,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+.item-end{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /*background*/
 .bg-blue {
@@ -67,18 +71,19 @@ body {
     box-shadow: 0 5px 15px black;
 }
 
+}
 .grille {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding: 10px;
     border: 10px;
 }
 
 .grille1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding: 10px;
     border: 10px;
 
@@ -117,13 +122,15 @@ body {
     grid-row-start: 4;
 }
 
+
 .size>img {
     width: 200px;
     height: 100px;
 }
 
 .card {
-    height: 400px;
+    min-height: 230px;
+    height: auto;
     width: 200px;
     border: solid 2px black;
     padding: 5px;
