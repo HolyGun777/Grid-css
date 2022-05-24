@@ -8,6 +8,11 @@ body {
     display: flex;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 .space-btw {
     display: flex;
     justify-content: space-between;
@@ -28,11 +33,7 @@ body {
     align-items: center;
 }
 
-.col {
-    display: flex;
-    flex-direction: column;
-}
-.item-end{
+.item-end {
     display: flex;
     justify-content: flex-end;
 }
@@ -57,36 +58,65 @@ body {
 .bg-green {
     background-color: green;
 }
-
+/* marging */
 .marg {
     margin: 15px;
 }
 
+.marg-top {
+    margin-top: 7vh;
+}
+.marg-top1{
+    margin-top:3vh;
+}
+/* nav bar */
 .nav {
     top: 0;
     width: 100%;
-    height: 7vh;
+    height: auto;
     position: fixed;
     border-bottom: solid 1px yellow;
     box-shadow: 0 5px 15px black;
 }
 
+.nav1 {
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    border-bottom: solid 1px yellow;
+    box-shadow: 0 5px 15px black;
+    background-color: chartreuse;
 }
+
+/* grid */
 .grille {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     border: 10px;
 }
 
 .grille1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     border: 10px;
+}
+/* item */
+.item {
+    grid-area: 1/1 / span 3/ span 4;
+}
 
+.item1 {
+    grid-area: 4/1 / span 3/ span 4;
+}
+
+.item2 {
+    grid-area: 8/1 / span 1 /span 4;
+}
+
+.item3 {
+    grid-area: 1/1 / span 3 / span 3;
 }
 
 /* Position-grille*/
@@ -106,26 +136,23 @@ body {
     grid-column-start: 4;
 }
 
-.row0 {
-    grid-row-start: 1;
-}
-
 .row1 {
     grid-row-start: 2;
 }
-
-.row2 {
-    grid-row-start: 3;
+.row7 {
+    grid-row-start: 7;
 }
 
-.row3 {
-    grid-row-start: 4;
+.row8 {
+    grid-row-start: 8;
 }
 
+.row9 {
+    grid-row-start: 9;
+}
 
-.size>img {
-    width: 200px;
-    height: 100px;
+.row10 {
+    grid-row-start: 10;
 }
 
 .card {
@@ -136,4 +163,14 @@ body {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 5px 5px 15px black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.size>img {
+    width: 200px;
+    height: 100px;
 }
